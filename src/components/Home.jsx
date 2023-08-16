@@ -12,6 +12,7 @@ const Home = () => {
   function onChange(value) {
     console.log("Captcha value:", value);
   }
+
   return (
     <div>
       <CustomNav />
@@ -36,17 +37,17 @@ const Home = () => {
             padding: "20px",
             textAlign: "center",
             // Media query for screens up to 992px
-            "@media (max-width: 992px)": {
+            "@media (maxWidth: 992px)": {
               padding: "15px",
               fontSize: "18px",
             },
             // Media query for screens up to 768px
-            "@media (max-width: 768px)": {
+            "@media (maxWidth: 768px)": {
               padding: "15px",
               fontSize: "18px",
             },
             // Media query for screens up to 600px
-            "@media (max-width: 600px)": {
+            "@media (maxWidth: 600px)": {
               padding: "10px",
               fontSize: "16px",
             },
@@ -68,15 +69,15 @@ const Home = () => {
                 fontWeight: "600",
                 marginBottom: "15px",
                 // Media query for screens up to 992px
-                "@media (max-width: 992px)": {
+                "@media (maxWidth: 992px)": {
                   fontSize: "24px",
                 },
                 // Media query for screens up to 768px
-                "@media (max-width: 768px)": {
+                "@media (maxWidth: 768px)": {
                   fontSize: "20px",
                 },
                 // Media query for screens up to 600px
-                "@media (max-width: 600px)": {
+                "@media (maxWidth: 600px)": {
                   fontSize: "18px",
                   marginBottom: "10px",
                 },
@@ -92,17 +93,17 @@ const Home = () => {
                 lineHeight: "25px",
                 maxWidth: "680px",
                 // Media query for screens up to 992px
-                "@media (max-width: 992px)": {
+                "@media (maxWidth: 992px)": {
                   fontSize: "14px",
                   lineHeight: "20px",
                 },
                 // Media query for screens up to 768px
-                "@media (max-width: 768px)": {
+                "@media (maxWidth: 768px)": {
                   fontSize: "14px",
                   lineHeight: "20px",
                 },
                 // Media query for screens up to 600px
-                "@media (max-width: 600px)": {
+                "@media (maxWidth: 600px)": {
                   fontSize: "12px",
                   lineHeight: "18px",
                   maxWidth: "100%",
@@ -133,19 +134,19 @@ const Home = () => {
                   lineHeight: "20px", // Default line height
 
                   // Media query for screens up to 992px
-                  "@media (max-width: 992px)": {
+                  "@media (maxWidth: 992px)": {
                     fontSize: "12px", // Adjust font size for smaller screens
                     padding: "8px", // Adjust padding for smaller screens
                   },
 
                   // Media query for screens up to 768px
-                  "@media (max-width: 768px)": {
+                  "@media (maxWidth: 768px)": {
                     fontSize: "12px", // Adjust font size for smaller screens
                     padding: "8px", // Adjust padding for smaller screens
                   },
 
                   // Media query for screens up to 600px
-                  "@media (max-width: 600px)": {
+                  "@media (maxWidth: 600px)": {
                     fontSize: "10px", // Adjust font size for smaller screens
                     padding: "6px", // Adjust padding for smaller screens
                   },
@@ -179,24 +180,24 @@ const Home = () => {
                 type="text"
                 placeholder="Your Wallet Address..."
                 style={{
-                  width: "100%",
+                  // width: "50%",
                   padding: "8px",
                   fontSize: "14px", // Default font size
 
                   // Media query for screens up to 992px
-                  "@media (max-width: 992px)": {
+                  "@media (maxWidth: 992px)": {
                     fontSize: "12px", // Adjust font size for smaller screens
                     padding: "6px", // Adjust padding for smaller screens
                   },
 
                   // Media query for screens up to 768px
-                  "@media (max-width: 768px)": {
+                  "@media (maxWidth: 768px)": {
                     fontSize: "12px", // Adjust font size for smaller screens
                     padding: "6px", // Adjust padding for smaller screens
                   },
 
                   // Media query for screens up to 600px
-                  "@media (max-width: 600px)": {
+                  "@media (maxWidth: 600px)": {
                     fontSize: "10px", // Adjust font size for smaller screens
                     padding: "4px", // Adjust padding for smaller screens
                   },
@@ -212,17 +213,17 @@ const Home = () => {
                   marginBottom: "8px",
 
                   // Media query for screens up to 992px
-                  "@media (max-width: 992px)": {
+                  "@media (maxWidth: 992px)": {
                     fontSize: "12px", // Adjust font size for smaller screens
                   },
 
                   // Media query for screens up to 768px
-                  "@media (max-width: 768px)": {
+                  "@media (maxWidth: 768px)": {
                     fontSize: "11px", // Adjust font size for smaller screens
                   },
 
                   // Media query for screens up to 600px
-                  "@media (max-width: 600px)": {
+                  "@media (maxWidth: 600px)": {
                     fontSize: "10px", // Adjust font size for smaller screens
                   },
                 }}
@@ -230,7 +231,14 @@ const Home = () => {
                 Request Type
               </h6>
 
-              <div style={{ display: "flex", flexDirection: "column" }}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  gap: "1rem",
+                  flexWrap: "wrap",
+                }}
+              >
                 <input
                   type="text"
                   placeholder="20 Test Link"
@@ -240,19 +248,19 @@ const Home = () => {
                     fontSize: "14px", // Default font size
 
                     // Media query for screens up to 992px
-                    "@media (max-width: 992px)": {
+                    "@media (maxWidth: 992px)": {
                       fontSize: "12px", // Adjust font size for smaller screens
                       padding: "6px", // Adjust padding for smaller screens
                     },
 
                     // Media query for screens up to 768px
-                    "@media (max-width: 768px)": {
+                    "@media (maxWidth: 768px)": {
                       fontSize: "12px", // Adjust font size for smaller screens
                       padding: "6px", // Adjust padding for smaller screens
                     },
 
                     // Media query for screens up to 600px
-                    "@media (max-width: 600px)": {
+                    "@media (maxWidth: 600px)": {
                       fontSize: "10px", // Adjust font size for smaller screens
                       padding: "4px", // Adjust padding for smaller screens
                     },
@@ -262,23 +270,24 @@ const Home = () => {
                   type="text"
                   placeholder="0.5 ETH"
                   style={{
+                    marginBottom: "10px",
                     padding: "8px", // Add padding for inputs
                     fontSize: "14px", // Default font size
 
                     // Media query for screens up to 992px
-                    "@media (max-width: 992px)": {
+                    "@media (maxWidth: 992px)": {
                       fontSize: "12px", // Adjust font size for smaller screens
                       padding: "6px", // Adjust padding for smaller screens
                     },
 
                     // Media query for screens up to 768px
-                    "@media (max-width: 768px)": {
+                    "@media (maxWidth: 768px)": {
                       fontSize: "12px", // Adjust font size for smaller screens
                       padding: "6px", // Adjust padding for smaller screens
                     },
 
                     // Media query for screens up to 600px
-                    "@media (max-width: 600px)": {
+                    "@media (maxWidth: 600px)": {
                       fontSize: "10px", // Adjust font size for smaller screens
                       padding: "4px", // Adjust padding for smaller screens
                     },
@@ -288,34 +297,34 @@ const Home = () => {
 
               <br />
               <br />
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  padding: "20px", // Adjust padding as needed
+              {/* <div
+              // style={{
+              //   display: "flex",
+              //   justifyContent: "center",
+              //   padding: "20px", // Adjust padding as needed
 
-                  // Media query for screens up to 992px
-                  "@media (max-width: 992px)": {
-                    padding: "15px", // Adjust padding for smaller screens
-                  },
+              //   // Media query for screens up to 992px
+              //   "@media (maxWidth: 992px)": {
+              //     padding: "15px", // Adjust padding for smaller screens
+              //   },
 
-                  // Media query for screens up to 768px
-                  "@media (max-width: 768px)": {
-                    padding: "10px", // Adjust padding for smaller screens
-                  },
-                }}
+              //   // Media query for screens up to 768px
+              //   "@media (maxWidth: 768px)": {
+              //     padding: "10px", // Adjust padding for smaller screens
+              //   },
+              // }}
               >
                 <div
                   style={{
                     maxWidth: "300px", // Set maximum width as needed
 
                     // Media query for screens up to 992px
-                    "@media (max-width: 992px)": {
-                      maxWidth: "240px", // Adjust maximum width for smaller screens
+                    "@media (maxWidth: 992px)": {
+                      maxWidth: "140px", // Adjust maximum width for smaller screens
                     },
 
                     // Media query for screens up to 600px
-                    "@media (max-width: 600px)": {
+                    "@media (maxWidth: 600px)": {
                       maxWidth: "100%", // Use full width for the smallest screens
                     },
                   }}
@@ -332,21 +341,30 @@ const Home = () => {
                     />
                   </div>
                 </div>
+              </div> */}
+
+              <div className="recaptcha">
+                <ReCAPTCHA
+                  sitekey="6LcK5aYnAAAAAKolEh09vKq2DBQtbcc-MT7zVF6I"
+                  onChange={onChange}
+                />
               </div>
 
               <Button
                 style={{
                   color: "white",
                   backgroundColor: "#9b1fe9",
-                  width: "100%", // Set width to 100% for responsiveness
+                  marginTop: "10px",
+                  // marginLeft: "20px",
+                  //  width: "100%",// Set width to 100% for responsiveness
 
                   // Media query for screens up to 768px
-                  "@media (max-width: 768px)": {
+                  "@media (maxWidth: 768px)": {
                     width: "50%", // Adjust width for smaller screens
                   },
 
                   // Media query for screens up to 600px
-                  "@media (max-width: 600px)": {
+                  "@media (maxWidth: 600px)": {
                     width: "100%", // Adjust width for even smaller screens
                   },
                 }}
@@ -363,8 +381,15 @@ const Home = () => {
           <CustomTable1 />
         </div>
 
-        <footer>
-          <p style={{ textAlign: "center", background: "white" }}>
+        <footer
+          style={{
+            textAlign: "center",
+            background: "white",
+            padding: "25px 0",
+            fontSize: "13px",
+          }}
+        >
+          <p>
             <FaCopyright /> copyright 2023 - All Right Reserved by Faucet
           </p>
         </footer>

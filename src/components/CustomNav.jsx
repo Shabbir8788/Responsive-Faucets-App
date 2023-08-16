@@ -54,7 +54,7 @@ const CustomNav = () => {
                 }}
               />
             </span>
-            Ethereum Covan
+            Ethereum Kovan
           </Dropdown.Toggle>
 
           <Dropdown.Menu>
